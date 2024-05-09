@@ -1,0 +1,210 @@
+.menu {
+    position: relative;
+    width: 100%;
+    height: auto; 
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    flex-wrap: wrap;
+  }
+  
+  .menu ul {
+    display: flex;
+    gap: 20px;
+    .a3 {
+      color: rgb(2, 200, 200);
+    }
+    a:hover{
+      color: rgb(2, 200, 200);
+    }
+  }
+  
+  .menu li {
+    list-style: none;
+    border-radius: 60px;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-size: 30px;
+  }
+  
+  .navvar {
+    width: 480px;
+    border-radius: 60px;
+    background: rgb(255, 255, 255);
+    margin-left: -65px; 
+  }
+  
+  .container {
+    display: inline-block;
+    margin-left: -35px; 
+  }
+  
+  .logo {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  
+  .titulo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .form-container {
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -11vh;
+  }
+  
+  form {
+    background: #ffffff;
+    border-color: black;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    margin-top: 20px; 
+  }
+  
+  .form {
+    width: 100%;
+    margin: auto;
+  }
+  
+  form .grupo{
+    position: relative;
+    margin: 45px;
+  }
+  
+  input, textarea{
+    background: none;
+    color:#c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+  }
+  
+  input:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+  }
+  
+  input:focus~label, 
+  input:valid~label, 
+  textarea:focus~label, textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+  }
+  
+  label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+  }
+  
+  
+  input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+  }
+  .barra{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #000000, #000000);
+    transition: 0.3s ease all;
+    left: 0%;
+  }
+  button{
+    background: #FC5C7D;
+    background: -webkit-linear-gradient(to right, #000000, #000000);
+    background: linear-gradient(to right, #000000, #000000);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border:none;
+    color:#ffffff; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:1100px){
+    form{
+        width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    form{
+        width: 60%;
+    }
+  }
+  
+  @media screen and (max-width:450px){
+    form{
+        width: 80%;
+    }
+  }
+  
+  @media screen and (max-width:300px){
+    form{
+        width: 90%;
+    }
+  }
+  .btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#000000;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+  }
+  .btn-wsp:hover{
+    background: #ffffff;
+    color:black;
+  }
+  @media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+  }
+  }
