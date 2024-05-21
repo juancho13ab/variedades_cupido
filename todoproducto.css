@@ -38,7 +38,6 @@
   width: 480px;
   border-radius: 60px;
   background: rgb(255, 255, 255);
-  margin-left: -65px; 
 }
 
 .container {
@@ -140,4 +139,19 @@
       height:63px;
       line-height: 66px;
 }
+}
+@media all and (max-width:426px){
+  .navvar{
+    height: 75px;
+    width: 400px;
+}
+}
+@media all and (max-width:410px){
+  .navvar li a{
+    font-size: 20px;
+  }
+  .navvar{
+    height: 70px;
+    width: 380px;
+  }
 }
